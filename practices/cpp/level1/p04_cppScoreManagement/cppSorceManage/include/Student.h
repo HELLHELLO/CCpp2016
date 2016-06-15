@@ -1,29 +1,24 @@
 #ifndef STUDENT_H
 #define STUDENT_H
-
-enum sex{MALE,FEMALE};
-
-typedef struct{
-    bool isOrNot;
-    int source;
-} subject;
+#include <string>
 
 class Student
 {
     public:
-        Student();
-        void setting()
+        Student(int number,std::string mOrFm,std::string s);
+        void value(int theValue);
+        void show();
+        void save();
+        int studentNumber();
         virtual ~Student();
 
     protected:
 
     private:
-        subject cpp;
-        subject math;
-        subject English;
+        int source;
         int number;
-        bool maleOrFemale;
-        char name[50];
+        std::string name;
+        std::string maleOrFemale;
 
 };
 
