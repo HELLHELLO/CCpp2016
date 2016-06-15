@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    Queue::iterator it;
-    Queue test(10);
+    Queue<int>::iterator it;
+    Queue<int> test(10);
     test.append(10);
     test.append(11);
     test.append(12);
@@ -19,6 +19,6 @@ int main()
     test.append(19);
     it=test.first();
     cout<<it[3]<<endl;
-    Queue::iterator itit=++it;
+    Queue<int>::iterator itit=++it;
     cout<<itit[0]<<endl;
 }

@@ -1,36 +1,37 @@
 #include "Queue.h"
-#include <iostream>
-Queue::Queue(int theMax){
-    data=new int[theMax];
+/*#include <iostream>
+template <class TYPE>
+Queue<TYPE>::Queue(int theMax){
+    data=new TYPE[theMax];
     head=0;
     tail=0;
 }
-
-Queue::~Queue(){
+template <class TYPE>
+Queue<TYPE>::~Queue(){
     delete []data;
 }
-
-void Queue::append(int item)
+template <class TYPE>
+void Queue<TYPE>::append(TYPE item)
 {
     data[tail]=item;
     tail=(tail+1)%MAX;
 }
-
-int Queue::pop()
+template <class TYPE>
+TYPE Queue<TYPE>::pop()
 {
     head=(head+1)%MAX;
     return data[(head+MAX-1)%MAX];
 }
-
-bool Queue::isEmpty()
+template <class TYPE>
+bool Queue<TYPE>::isEmpty()
 {
     return (head==tail);
 }
-
-bool Queue::isFull()
+template <class TYPE>
+bool Queue<TYPE>::isFull()
 {
     return ((head+1)%MAX==tail);
 }
-
+*/
 
 
